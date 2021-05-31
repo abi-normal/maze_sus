@@ -1,0 +1,157 @@
+ <!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>i dont like this</title>
+<style> 
+	
+	#background { width: 1500px; position: absolute; top: 0; left: 0;}
+	#blue { position: absolute; width: 560px; top: -10px; left: 160px}
+	#creep { position: absolute; width: 200px; top: 700px; left: 500px; }
+	#face { position: absolute; width: 250px; top: 750px; left: 900px; }
+	#creep2 { position: absolute; width: 200px; top: 1750px; left: 300px; }
+	#true {
+		border-radius: 100px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        background-color: #ff1a75;
+          box-shadow: 0 0 5px #ff1a75;
+        font-family: Arial Rounded MT Bold;
+		position: absolute;
+		
+width: 70px; position: absolute; top: 1850px; left: 220px; text-align: center; height: 42px; font-size: 30px; 
+		animation: glowing 1300ms infinite;
+		
+	}
+	#false{
+		border-radius: 100px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        background-color: #ff1a75;
+          box-shadow: 0 0 5px #ff1a75;
+        font-family: Arial Rounded MT Bold;
+		position: absolute;
+		
+width: 75px; position: absolute; top: 1850px; left: 130px; text-align: center; height: 42px; font-size: 30px; 
+		animation: glowing 1300ms infinite;
+	}
+	
+	#bar {
+			width:2px;
+	height:1120px;
+	border:thin;
+	position: fixed;
+    top: 0px;
+	left: 0px;
+	display: flex;
+
+
+	margin-left:30px;
+	background-color:lawngreen;
+    -webkit-animation: animate02 0.01s infinite; 
+    animation: animate02 0.01s infinite;
+	animation-iteration-count:infinite;
+	opacity:0.7;
+	animation-delay: 0s;
+		}
+		
+		#bar1 {
+			width:2px;
+	height:1120px;
+	border:thin;
+	position: fixed;
+    top: 0px;
+	left: 0px;
+	display: flex;
+
+
+	margin-left:30px;
+	background-color:blue;
+    -webkit-animation: animate02 0.03s infinite; 
+    animation: animate02 0.03s infinite;
+	animation-iteration-count:infinite;
+	opacity:0.7;
+	animation-delay: 0.02s;
+		}
+		@-webkit-keyframes animate02 {
+    50% {left:1200px;}
+	 50% {right:1200px;}
+}
+@keyframes animate02 {
+    50% {left:1200px;}
+	 50% {right:1200px;}
+}	
+	
+@keyframes glowing {
+        0% {
+          background-color: #000066;
+          box-shadow: 0 0 5px #000066;
+        }
+        50% {
+          background-color: #0000ff;
+          box-shadow: 0 0 20px #ff33ff;
+        }
+        100% {
+          background-color: #6666ff;
+
+          box-shadow: 0 0 5px #00ff00;
+
+        }
+
+	</style>	
+	
+</head>
+
+<body>
+
+<audio src="creeeeepy.mp3" type="audio/mpeg" autoplay="true" loop="true" > 
+	</audio> 
+
+<img id="background" src="background13.png" alt=""/>
+<input type="image" onClick="playAudio1()" id="blue" src="blueeflip.png" alt="where am i?"/>
+<input type="image" onClick="playAudio2()" id="creep" src="yee.png" alt="I'm watching you"/>
+<input type="image" onClick="playAudio3()" id="creep2" src="yee.png" alt="I'm watching you"/>
+<a id="true" href="city1.html" >true</a>
+<a id="false" href="eyes.html">false</a>
+<div id="bar"></div>
+<div id="bar1"></div>
+	
+<audio id="sound1">
+  <source src="yeh.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sound2">
+  <source src="es.mp3" type="audio/mpeg">
+</audio> 
+
+<audio id="sound3">
+  <source src="blam.wav" type="audio/wav">
+</audio>  
+
+<script>
+var x = document.getElementById("sound1"); 
+var y = document.getElementById("sound2"); 
+var z = document.getElementById("sound3"); 
+
+	
+function playAudio1() { 
+  x.play(); 
+}
+function playAudio2() { 
+  y.play(); 
+}
+
+function playAudio3() { 
+  z.play(); 
+}
+
+	
+</script>
+
+</body>
+</html>

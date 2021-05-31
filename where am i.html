@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>where am i?</title>
+<style>
+
+ 
+
+    #background { 
+	  width: 1500px; position: absolute; top: 0; left: 0;
+		 }
+	#yes{
+		 border-radius: 100px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        background-color: #ff1a75;
+          box-shadow: 0 0 5px #ff1a75;
+        font-family: Arial Rounded MT Bold;
+		position: absolute;
+		
+width: 70px; position: absolute; top: 1890px; left: 600px; text-align: center; height: 42px; font-size: 30px;
+	}
+	
+	#no {
+		 border-radius: 100px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        background-color: #ff1a75;
+          box-shadow: 0 0 5px #ff1a75;
+        font-family: Arial Rounded MT Bold;
+		position: absolute;
+		
+width: 70px; position: absolute; top: 1890px; left: 700px; text-align: center; height: 42px; font-size: 30px;
+		
+	}
+	
+	#logo {
+		width: 500px; position: absolute; top: 10px; left: 2px;
+	} 
+	
+	#gif1 {
+		width: 450px; position: absolute; top: 870px; left: 500px; 
+	}
+	#spin { width: 300px; position: absolute; top: 200px; left: 1100px; 
+	}
+	
+	
+	.button {
+		
+        border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer; 
+        font-family: Arial Rounded MT Bold;
+		position: absolute;
+	}
+	.button1{
+		width: 150px; font-size: 15px; top: 400px; left: 700px;
+	}
+	.button2 {
+		width: 150px; font-size: 18px; top: 700px; left: 420px;
+	}
+	.button3 {
+		width: 200px; font-size: 20px; top: 1800px; left: 920px;
+	}
+	.button4 {
+		width: 200px; font-size: 20px; top: 850px; left: 1100px;
+	}
+	.button5 {
+		width: 130px; font-size: 12px; top: 1150px; left: 300px;
+	}
+	.button6 {
+		width: 180px; font-size: 18px; top: 1250px; left: 1150px;
+	}
+	.button7 {
+		width: 160px; font-size: 14px; top: 1600px; left: 250px; 
+		
+
+
+	}
+    @keyframes glowing {
+        0% {
+          background-color: #ff1a75;
+          box-shadow: 0 0 5px #ff1a75;
+        }
+        50% {
+          background-color: #ffbf80
+;
+          box-shadow: 0 0 20px #ff33ff;
+        }
+        100% {
+          background-color: #00e600;
+;=
+          box-shadow: 0 0 5px #00e600;
+
+        }
+      }
+      .button {
+		  animation: glowing 1300ms infinite; }
+
+	</style>
+	
+</head>
+
+<body> 
+
+<audio id="monster" src="monster1.mp3" type="audio/mpeg" autoplay="true" loop="true"> 
+	</audio> 
+
+	
+<img id="background" src="webpage idea2.jpg" alt=""/> 
+<input type="image" onClick="playAudio5()" id="logo" src="final logo (abi).png" alt="what is this?"/> 
+<input onClick="playAudio6()" type="image" id="gif1" src="Untitled-1.gif" alt="globe"/> 
+<input onClick="playAudio4()" type="image" id="spin" src="cubehee1.gif"  alt="earth"/>
+
+
+<button class="button button1">error error error</button> 
+<button onClick="playAudio2()" class="button button2">where am i?</button> 
+<button onClick="playAudio3()" class="button button3">error error error</button> 
+<button onClick="playAudio1()" class="button button4">what is this place?</button> 
+<button onClick="playAudio3()" class="button button5">I don't trust it</button> 
+<button onClick="playAudio1()" class="button button6">don't trust</button> 
+<button onClick="playAudio6()" class="button button7">error error error</button> 
+<a id="yes" href="diversion 1 - consumerism.html">yes</a>
+<a id="no" href="cube diversion yes.html">no</a>
+   
+<audio id="sound1">
+  <source src="wooo.wav" type="audio/wav"> 
+</audio>
+
+<audio id="sound2">
+  <source src="where am I low pitch.mp3" type="audio/mpeg">
+</audio>
+	
+<audio id="sound3">
+  <source src="pika.wav" type="audio/wav">
+</audio>
+
+<audio id="sound4">
+  <source src="wau.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sound5">
+  <source src="yeh.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sound6">
+  <source src="cough.mp3" type="audio/mpeg">
+</audio> 
+	
+<script>
+var x = document.getElementById("sound1"); 
+var y = document.getElementById("sound2"); 
+var z = document.getElementById("sound3");
+var a = document.getElementById("sound4");	
+var b = document.getElementById("sound5");
+var c = document.getElementById("sound6");
+	
+function playAudio1() { 
+  x.play(); 
+}
+function playAudio2() { 
+  y.play(); 
+}
+function playAudio3() { 
+  z.play(); 
+}
+function playAudio4() { 
+  a.play(); 
+}
+function playAudio5() { 
+  b.play(); 
+}
+function playAudio6() { 
+  c.play(); 
+}
+</script>
+
+</body>
+	
+</html>

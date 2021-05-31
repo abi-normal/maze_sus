@@ -1,0 +1,206 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cubes </title>
+
+	<style> 
+		
+		#backg { width: 1650px; height: 1000px; position: absolute; top: 0; left: 0;
+			
+		}
+	
+		#bloodcube {
+			width: 200px; position: absolute; top 10px; left: 70px;
+		}
+	
+		#bright { 
+			width: 300px; position: absolute; top: 40px; left: 150px;
+		}
+		
+		#cubegif{
+			width: 250px; position: absolute; top: 150px; left: 1120px;
+		}
+		
+		#africa {
+			width: 150px; position: absolute; top: 580px; left: 555px;
+		}
+		
+		#bus { width: 280px; position: absolute; top: 450px; left: 1350px;
+		
+		}
+		#search {
+			position: absolute; top: 600px; left: 200px; width: 500px;
+		}
+		#yup {
+			position: absolute; width: 200px; top: 550px; left: 1000px; 
+		}
+		#exit{  background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Arial Rounded MT Bold;
+		top: 400px; 
+		left: 1100px; 
+		position: fixed;  
+		font-size: 12px; 
+		animation: glowing 1300ms infinite;
+      
+			
+		}
+		#chair { position: absolute; width: 150px; top: 50px; left: 1300px; 
+			
+		}
+
+	    .button {
+        background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Arial Rounded MT Bold;
+      
+        padding: 
+        text-align: none;
+        text-decoration: none;
+	
+ 
+      }
+		.button1 {
+			top: 100px; left: 600px; position: fixed;  font-size: 12px;
+		}
+		
+		.button2 {
+			top: 400px; left: 200px; position: fixed;   font-size: 18px;
+		}
+		.button3 {
+			top: 300px; left: 500px; position: fixed; font-size: 13px;
+		}
+		.button4 {
+			top: 150px; left: 100px; position: fixed; font-size: 15px;
+		}
+		.button5 { 
+			top: 150px; left: 1000px; position: fixed; font-size: 19px;
+			}
+		.button6 {
+			top: 550px; left: 1300px; position: fixed; font-size: 15px;
+		}
+		.button7 { 
+			top: 650px; left: 300px; position: fixed; font-size: 15px;
+	}
+		.button8 {
+			top: 450px; left: 900px; position: fixed; font-size: 19px;
+		}
+		
+      @keyframes glowing {
+        0% {
+          background-color: #00e600;
+          box-shadow: 0 0 5px #00e600;
+        }
+        50% {
+          background-color: #49e819;
+          box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+          background-color: #00e600;
+;=
+          box-shadow: 0 0 5px #00e600;
+
+        }
+      }
+      .button {
+		  animation: glowing 1300ms infinite; }
+
+		 
+  
+	
+	</style>
+
+</head>
+
+<body>
+
+<audio src="typing1.mp3" type="audio/mpeg" autoplay="true" loop="true" > 
+	</audio> 	
+	
+<img id="backg" src="cube background yesiyes.jpg" alt=""/> 
+<img id="search" src="googlesearch1.gif"  alt=""/>
+<img id="chair" src="IMG_20210404_001223.jpg" alt=""/> 
+
+	
+<input type="image" id="bloodcube" src="blood.png" alt="your browser does not support this image"/>
+<input type="image" onClick="playAudio()" id="bright" src="windo.png" alt="your browser does not support this image"/> 
+<input type="image" onClick="playAudio3()" id="bus" src="bus.gif" alt="your browser does not support this image"/> 
+<input type="image" onClick="playAudio1()" id="cubegif" src="cubeee1.gif" alt="your browser does not support this image"/>
+<input type="image" onClick="playAudio2()" id="africa" src="yesss.png" alt="your browser does not support this image"/>
+<input type="image" onClick="playAudio4()" id="yup" src="yello.png" alt="your browser does not support this image"/>
+
+	<a class="button" href="#">flash</a>
+<button type="submit" class="button button1">digital globe</button>
+<button type="submit" class="button button2">where am I?</button>
+<button type="submit" class="button button3">I don't trust it anymore</button>
+<button type="submit" class="button button4">...truth...</button>
+<button type="submit" class="button button5">false</button>
+<button type="submit" class="button button6">"error"</button>
+<button type="submit" class="button button7">what are we becoming</button>
+<button type="submit" class="button button8">pixel earth</button>
+<a id="exit" href="hellscape.html">where?</a>
+	
+<audio id="sound1">
+  <source src="emptyreverse.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sound2">
+  <source src="fran.mp3" type="audio/mpeg">
+</audio> 
+
+<audio id="sound3">
+  <source src="where am I low pitch.mp3" type="audio/mpeg">
+</audio> 
+
+<audio id="sound4">
+  <source src="ree.mp3" type="audio/mpeg">
+</audio> 
+	
+<audio id="sound5">
+  <source src="carona.mp3" type="audio/mpeg">
+</audio> 
+
+<script>
+var x = document.getElementById("sound1"); 
+
+var y = document.getElementById("sound2"); 
+
+var z = document.getElementById("sound3"); 
+	
+var a = document.getElementById("sound4"); 
+
+var b = document.getElementById("sound5"); 
+	
+function playAudio() { 
+  x.play(); 
+}
+
+function playAudio1() { 
+  y.play(); 
+} 
+function playAudio2() { 
+  z.play(); 
+} 
+function playAudio3() { 
+  a.play(); 
+} 
+function playAudio4() { 
+  b.play(); 
+} 
+	</script>
+	
+
+</body>
+
+</html>

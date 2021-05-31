@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>city</title>
+<style>
+	#background {
+		position: absolute; top: 0; left: 0; width: 2000px; 
+	}
+	#monster1{
+		position: absolute; top: 515px; left: 250px; width: 450px;
+	}
+	#blue { 
+		position: absolute; top: 755px; left: 900px; width: 160px;
+	}
+	#white {
+		position: absolute; top: 150px; left: 1650px; width: 300px;
+	}
+	
+	#logo {
+		position: absolute; top: 600px; left: 1350px; width: 400px;
+	}
+	#gif {
+		position: absolute; top: 555px; left: 1395px; width: 300px;
+	}
+	#purple {
+		position: absolute; top: 300px; left: 505px; width: 200px; 
+	}
+	#exit {
+		position: absolute; top: 565px; left: 95px; width: 300px; font-size: 25px;  font-family: Monospace:Lucida Console;
+ color: #d98026; 
+	}
+	</style>
+</head>
+
+<body>
+<img id="background" src="bath.jpg"  alt=""/>
+
+<a id="exit" href="endcard.html">-------</a>
+	
+<img id="gif" src="cubehee1.gif" alt=""/>
+	
+
+<input type="image" onClick="playAudio1()" id="purple" src="monster.png" alt="your browser does not support this image"/> 
+<input type="image" onClick="playAudio2()" id="monster1" src="monster45.png" alt="your browser does not support this image"/>
+<input type="image" onClick="playAudio3()" id="logo" src="blueee.png" alt="your browser does not support this image"/>
+<input type="image" onClick="playAudio4()" id="blue" src="blugu.png" alt="your browser does not support this image"/>
+<input type="image" onClick="playAudio5()" id="white" src="gooo1.png" alt="your browser does not support this image"/>
+	
+	<audio id="sound1">
+  <source src="carona.mp3" type="audio/mpeg">
+</audio>
+
+	<audio id="sound2"> 
+	<source src="sneeze.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="sound3">
+  <source src="emptyreverse.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sound4">
+  <source src="where.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sound5">
+  <source src="es.mp3" type="audio/mpeg">
+</audio>
+	
+
+
+<script>
+var x = document.getElementById("sound1"); 
+	
+var y = document.getElementById("sound2");
+
+var z = document.getElementById("sound3");	
+
+var a = document.getElementById("sound4");
+
+var b = document.getElementById("sound5");
+
+function playAudio1() { 
+  x.play(); 
+}
+
+function playAudio2() { 
+  y.play(); 
+}
+
+function playAudio3() { 
+  z.play(); 
+}
+
+	function playAudio4() { 
+  a.play(); 
+}
+
+	function playAudio5() { 
+  b.play(); 
+}
+</script> 
+
+</body>
+</html>
